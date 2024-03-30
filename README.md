@@ -48,5 +48,8 @@ LearningGo/
 Contributions to the LearningGo project are welcome! If you have any suggestions, improvements, or bug fixes, please feel free to submit a pull request. Make sure to follow the [contribution guidelines](CONTRIBUTING.md) before contributing.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
 
+
+
+Ayoub Tadlaoui                                         Excellence Prevail!
