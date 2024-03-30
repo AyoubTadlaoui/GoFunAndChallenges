@@ -50,6 +50,3 @@ Contributions to the LearningGo project are welcome! If you have any suggestions
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-Feel free to customize the README file according to the specific details of your LearningGo project. You can add more sections, provide detailed instructions, or include additional information as needed.
