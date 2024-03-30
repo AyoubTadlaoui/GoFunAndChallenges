@@ -1,0 +1,2 @@
+module LEARNINGGO
+go 1.22.1
