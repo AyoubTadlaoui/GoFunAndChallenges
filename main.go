@@ -1,15 +1,16 @@
 package main
 
 import (
-	compositDT "LearningGO/CompositeDT"
+	fundamentals "LearningGO/Fundamentals"
+	intro "LearningGO/Intro"
 )
 
 func main() {
 
-	// intro.Intro()
+	intro.Intro()
 	// fmt.Println()
-	// fundamentals.Fundamentals()
+	fundamentals.Fundamentals()
 	// fmt.Println()
-	compositDT.CompositDT()
+	//compositDT.CompositDT()
 
 }

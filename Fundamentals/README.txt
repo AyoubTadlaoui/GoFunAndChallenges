@@ -1,10 +1,10 @@
-Certainly! Here are several examples to practice each of the fundamental concepts in Go programming:
+
 
 1. **Variables and Constants**:
    - Write a program that declares variables of different data types (integers, floats, strings, booleans) and prints their values.
    - Create a program that calculates the area of a rectangle using variables to store the length and width.
    - Experiment with constants by defining mathematical constants like pi and using them in calculations.
-   
+
 2. **Functions and Methods**:
    - Write a function that takes two integers as input parameters and returns their sum.
    - Implement a function to calculate the factorial of a given integer using recursion.
