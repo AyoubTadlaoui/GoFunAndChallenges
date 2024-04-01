@@ -120,4 +120,33 @@ func Arrays() {
 
 	fmt.Println("Big Citie(s)", bigCities)
 
+	newCities := map[string]int{
+
+		"Casablanca": 2600000,
+	}
+
+	//Merge the two maps
+	for city, population := range mapForDiffCities {
+		newCities[city] = population
+	}
+	fmt.Println(newCities)
+
+	// Selecting only the big cities:
+
+	metropolis := make(map[string]int)
+
+	for city, population := range newCities {
+
+		if population > 1000000 {
+			metropolis[city] = population
+		}
+	}
+	//Print result
+	fmt.Println("Citie(s) with a population bigger then 1 Million: ", metropolis)
+
+	//Print result without the prefix map and []
+	for printCity, printPopulation := range metropolis {
+		fmt.Printf("Citie(s) with a population bigger then 1 Million: %s with a population of:%d\n", printCity, printPopulation)
+	}
+
 }
