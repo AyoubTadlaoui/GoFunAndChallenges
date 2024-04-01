@@ -1,7 +1,7 @@
 # LearningGo
 
 ## Overview
-<<<<<<< HEAD
+
 LearningGo is a project aimed at helping individuals learn the Go programming language through practical examples, challenges, and tutorials. This project covers various aspects of Go programming, from fundamentals to advanced topics, and provides hands-on exercises to reinforce learning.
 =======
 
