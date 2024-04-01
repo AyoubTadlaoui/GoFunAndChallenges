@@ -2,9 +2,7 @@
 
 ## Overview
 
-LearningGo is a project aimed at helping individuals learn the Go programming language through practical examples, challenges, and tutorials. This project covers various aspects of Go programming, from fundamentals to advanced topics, and provides hands-on exercises to reinforce learning.
-=======
-
+# LearningGo is a project aimed at helping individuals learn the Go programming language through practical examples, challenges, and tutorials. This project covers various aspects of Go programming, from fundamentals to advanced topics, and provides hands-on exercises to reinforce learning.
 
 ## Table of Contents
 
@@ -60,6 +58,7 @@ Contributions to the LearningGo project are welcome! If you have any suggestions
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 =======
+
 ### About Me
 
 Hey there! 👋 I'm Ayoub Tadlaoui aka "Atlas kaisar", a relentless problem-solver from Morocco with a passion for coding and a knack for turning complex mathematical concepts into elegant software solutions. My journey into the world of programming began with my fascination with modulo topics and abelian groups in mathematics, where I discovered the power of computational thinking. Since 2016, I've been leveraging my coding skills to deliver top-notch software solutions for clients and assisting university students in conquering their academic modules. With a relentless pursuit of excellence and a strong foundation in both mathematics and programming, I'm dedicated to pushing the boundaries of what's possible in the world of technology.
@@ -67,6 +66,3 @@ Hey there! 👋 I'm Ayoub Tadlaoui aka "Atlas kaisar", a relentless problem-solv
 ### Favorite Quote
 
 "High performance knows no part-time commitment."
-
----
->>>>>>> d015afa (Added to Fundamentals:Arrays, Maps, Slices, Strucs, CompositDataTypes_Integration\nAdded to LearningGO: RealWorldApplications)
