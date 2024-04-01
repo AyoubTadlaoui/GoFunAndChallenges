@@ -1,9 +1,9 @@
 package tests
 
-import (
-	tests "LEARNINGGO/Prototyping/tests"
-)
+// import (
+//  testing "LearningGO/Prototyping/tests"
+// )
 
-func Prototyping() {
-	tests.Pointers()
-}
+// func Prototyping() {
+//  testing.Pointers()
+// }

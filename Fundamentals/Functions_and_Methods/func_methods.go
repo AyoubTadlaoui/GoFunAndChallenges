@@ -1,7 +1,7 @@
 package FunctionsAndMethods
 
 import (
-	"LEARNINGGO/Fundamentals/Functions_and_Methods/shapes"
+	"LearningGO/Fundamentals/Functions_and_Methods/shapes"
 	"fmt"
 )
 

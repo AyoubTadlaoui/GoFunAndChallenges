@@ -1,5 +1,3 @@
-Certainly! Here are some theoretical exercises to help you practice composite data types (arrays, slices, maps, and structs) in Go:
-
 1. **Arrays**:
    - Define an array of integers and print each element.
    - Calculate the sum of all elements in an array.

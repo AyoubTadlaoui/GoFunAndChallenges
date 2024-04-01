@@ -1,7 +1,7 @@
 package fundamentals
 
 import (
-	FunctionsAndMethods "LEARNINGGO/Fundamentals/Functions_and_Methods"
+	FunctionsAndMethods "LearningGO/Fundamentals/Functions_and_Methods"
 
 	"fmt"
 )

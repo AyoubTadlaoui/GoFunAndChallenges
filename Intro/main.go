@@ -1,7 +1,7 @@
 package intro
 
 import (
-	"LEARNINGGO/Intro/greetings"
+	"LearningGO/Intro/greetings"
 	"fmt"
 )
 
