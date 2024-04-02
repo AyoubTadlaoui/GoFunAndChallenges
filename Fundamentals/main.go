@@ -4,6 +4,7 @@ import (
 	arrayconst "LearningGO/Fundamentals/Arrays"
 	maps "LearningGO/Fundamentals/Maps"
 	slices "LearningGO/Fundamentals/Slices"
+	structs "LearningGO/Fundamentals/Strucs"
 	"fmt"
 )
 
@@ -29,5 +30,6 @@ func Fundamentals() {
 	// fmt.Println()
 	// FunctionsAndMethods.Factorial()
 	// FunctionsAndMethods.MethodStruct()
+	structs.Structures()
 
 }
