@@ -1,10 +1,7 @@
 package fundamentals
 
 import (
-	arrayconst "LearningGO/Fundamentals/Arrays"
-	maps "LearningGO/Fundamentals/Maps"
-	slices "LearningGO/Fundamentals/Slices"
-	structs "LearningGO/Fundamentals/Strucs"
+	pointers_and_memo "LearningGO/Fundamentals/Pointer_Memory_Management"
 	"fmt"
 )
 
@@ -19,17 +16,18 @@ func Fundamentals() {
 	// varsConsts.CircleAriaAndSurface()
 	// fmt.Println()
 	// Arrays: (Uncomment to display results)
-	arrayconst.Arrays()
+	// arrayconst.Arrays()
 	//Slices: (Uncomment to display results)
-	slices.Slices()
+	// slices.Slices()
 	//Maps: (Uncomment to display results)
-	maps.Maps()
+	// maps.Maps()
 	//Structs: (Uncomment to display results)
 	//Functions: (Uncomment to display results)
 	// FunctionsAndMethods.Addition()
 	// fmt.Println()
 	// FunctionsAndMethods.Factorial()
 	// FunctionsAndMethods.MethodStruct()
-	structs.Structures()
+	// structs.Structures()
+	pointers_and_memo.Pointers()
 
 }
