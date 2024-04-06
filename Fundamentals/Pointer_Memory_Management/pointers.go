@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// ===================== Structs and methods for question 3 ====================
 type Node struct {
 	data int
 	next *Node
@@ -30,6 +31,8 @@ func (ll *LinkedList) Display() {
 	}
 	fmt.Println("")
 }
+
+//=========================================================================
 
 func Pointers() {
 
@@ -76,7 +79,7 @@ func Pointers() {
 	// Printing
 	fmt.Println(x2)
 
-	//  - Implement a linked list data structure using pointers to manage memory dynamically.
+	//  - Implement a linked list data structure using pointers to manage memory dynamically ✅
 	fmt.Println(" - Implement a linked list data structure using pointers to manage memory dynamically.")
 	ll := NewLinkedList()
 	ll.append(11)

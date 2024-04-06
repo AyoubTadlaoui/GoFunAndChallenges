@@ -1,7 +1,7 @@
 package fundamentals
 
 import (
-	pointers_and_memo "LearningGO/Fundamentals/Pointer_Memory_Management"
+	error_handling "LearningGO/Fundamentals/Error_Handling"
 	"fmt"
 )
 
@@ -28,6 +28,7 @@ func Fundamentals() {
 	// FunctionsAndMethods.Factorial()
 	// FunctionsAndMethods.MethodStruct()
 	// structs.Structures()
-	pointers_and_memo.Pointers()
+	// pointers_and_memo.Pointers()
+	error_handling.ErrorHandling()
 
 }
