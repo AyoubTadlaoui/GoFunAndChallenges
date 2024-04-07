@@ -32,4 +32,5 @@ func ErrorHandling() {
 		return
 	}
 	fmt.Printf("%.2f devided by %.2f is %.2f\n", x, y, result)
+	fmt.Println("- Implement a file reading function that returns an error if the file does not exist or cannot be read. ")
 }
