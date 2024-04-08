@@ -21,7 +21,6 @@ func ErrorHandling() {
 		if b == 0 {
 			return -1, errors.New("You CANNOT DEVIDE BY ZERO!!! 😡")
 		}
-
 		return a / b, nil
 	}
 

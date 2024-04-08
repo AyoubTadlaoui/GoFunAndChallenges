@@ -5,12 +5,13 @@ import (
 	"fmt"
 )
 
+//- Function Declaration: Syntax for declaring and calling functions in Go
 // - Write a function that takes two integers as input parameters and returns their sum.
 
 func Addition() {
 
 	var a, b float32
-
+	fmt.Println("- Write a function that takes two integers as input parameters and returns their sum.")
 	fmt.Println("Input the first number you wanna add:")
 	fmt.Scan(&a)
 	fmt.Println("Input the second number you wanna add:")
@@ -95,4 +96,21 @@ func MethodStruct() {
 	result := cInData.Surface()
 	fmt.Println("The Aria of this circle is:", result)
 
+}
+
+func Veriadic() {
+
+	summation := func(numbers ...int) (int, int) {
+		total := 0
+		totalIndices := 0
+		for index, sum := range numbers {
+			totalIndices += index
+			total += sum
+		}
+
+		return total, totalIndices
+	}
+	slice1 := []int{1, 2, 3}
+	sum1, sumindices1 := summation(slice1...)
+	println(sum1, sumindices1)
 }

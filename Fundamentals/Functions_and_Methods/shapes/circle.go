@@ -2,6 +2,8 @@ package shapes
 
 import "math"
 
+//- Function Parameters and Return Values: Passing arguments to functions and returning values.
+
 // Define Circle struct
 type Circle struct {
 	Radius float64
