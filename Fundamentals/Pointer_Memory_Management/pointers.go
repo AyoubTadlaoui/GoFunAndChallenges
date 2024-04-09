@@ -2,9 +2,16 @@ package pointers_and_memo
 
 import (
 	"fmt"
+	"strconv"
 )
 
-// ===================== Structs and methods for question 3 ====================
+// ===================== Structs and methods for  ====================
+
+type User struct {
+	userName, email string
+	age             int
+}
+
 type Node struct {
 	data int
 	next *Node
@@ -30,6 +37,22 @@ func (ll *LinkedList) Display() {
 		current = current.next
 	}
 	fmt.Println("")
+}
+
+func (u *User) Create(a, b string, c int) {
+	cs := strconv.Itoa(c)
+	u.userName = a
+	u.email = b
+	u.age = c
+
+	s := make(map[string]string)
+	s["User Name: "] = a
+	s["Email: "] = b
+	s["Age: "] = cs
+
+	for key, value := range s {
+		fmt.Printf("%s: %s\n", key, value)
+	}
 }
 
 //=========================================================================
@@ -90,4 +113,23 @@ func Pointers() {
 	ll.append(31)
 	fmt.Println("Linked List:")
 	ll.Display()
+}
+
+func DynamicAllocation() {
+
+	// - Memory Allocation: Using the `new` and `make` functions for dynamic memory allocation: ❌
+
+	fmt.Println(" - Memory Allocation: Using the `new` and `make` functions for dynamic memory allocation")
+
+	user := User{
+		userName: "User Name",
+		email:    "default@email.com",
+		age:      24,
+	}
+	fmt.Println(user)
+	user.Create("Djahmet", "djahmet@mail.com", 33)
+	fmt.Println(user)
+	u := new(User)
+	u.Create("BOLO", "pinkoko@gmail.com", 28)
+
 }

@@ -1,7 +1,7 @@
 package fundamentals
 
 import (
-	FunctionsAndMethods "LearningGO/Fundamentals/Functions_and_Methods"
+	pointers_and_memo "LearningGO/Fundamentals/Pointer_Memory_Management"
 	"fmt"
 )
 
@@ -27,9 +27,10 @@ func Fundamentals() {
 	// fmt.Println()
 	// FunctionsAndMethods.Factorial()
 	// FunctionsAndMethods.MethodStruct()
-	FunctionsAndMethods.Veriadic()
+	//FunctionsAndMethods.Veriadic()
 	// structs.Structures()
 	// pointers_and_memo.Pointers()
+	pointers_and_memo.DynamicAllocation()
 	//error_handling.ErrorHandling()
 
 }
