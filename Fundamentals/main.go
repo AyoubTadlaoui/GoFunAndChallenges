@@ -31,6 +31,7 @@ func Fundamentals() {
 	// structs.Structures()
 	// pointers_and_memo.Pointers()
 	// pointers_and_memo.DynamicAllocation()
-	error_handling.ErrorHandlingTwo()
-
+	// error_handling.ErrorHandlingOne()
+	// error_handling.ErrorHandlingTwo()
+	error_handling.ErrorHandlingThree()
 }

@@ -77,4 +77,45 @@ func ErrorHandlingTwo() {
 		return
 	}
 	fmt.Printf("%s\n", fileContent)
+
+}
+
+func ErrorHandlingThree() {
+
+	fmt.Println("- Experiment with error wrapping by creating multiple layers of function calls and wrapping errors at each level:")
+
+	layer1 := func() error {
+
+		return errors.New("Error in layer 1")
+
+	}
+
+	layer2 := func() error {
+		err := layer1
+
+		if err != nil {
+			str := "Error in layer 2:"
+			return fmt.Errorf("%s %w", str, err())
+		}
+		return nil
+	}
+
+	layer3 := func() error {
+		err := layer2
+		if err != nil {
+			str := "Error in layer 3:"
+			return fmt.Errorf("%s %w", str, err())
+		}
+		return nil
+	}
+
+	errWrap := layer3()
+
+	if errWrap != nil {
+		fmt.Println("Error:", errWrap)
+		return
+	}
+
+	fmt.Println("No errors!")
+
 }
