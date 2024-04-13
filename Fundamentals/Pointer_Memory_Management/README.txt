@@ -5,4 +5,4 @@
 
    - Implement a linked list data structure using pointers to manage memory dynamically:✅
 
-   - Memory Allocation: Using the `new` and `make` functions for dynamic memory allocation: ❌
+   - Memory Allocation: Using the "new" and "make" functions for dynamic memory allocation: ✅
