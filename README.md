@@ -38,7 +38,7 @@ Feel free to explore the directories and files in this repository to learn more 
 LearningGo/
 ├── Fundamentals/
 │   ├── README.md
-│   └── ...
+│   └── .main.go
 ├── Challenges/
 │   ├── README.md
 │   └── ...
@@ -47,7 +47,27 @@ LearningGo/
 │   └── ...
 ├── LICENSE
 └── README.md
-```
+└── main.go
+
+## How To lunch your Programs:
+Go to Fundamentals Directory into main.go
+Uncomment the Imported directory and its function for exemple, you want to work with Arrays uncomment Path that ends with Arrays
+then in the Function uncomment its package module. as you can see below.
+import (
+
+arrayconst "LearningGO/Fundamentals/Arrays"
+	"fmt"
+)
+
+func Fundamentals() {
+
+	fmt.Println("================== Fundamentals ===================")
+
+ arrayconst.Arrays()
+
+}
+
+When you finish with your section make sure you Comment-out the path first then the function before you save the file
 
 ## Contributing
 
@@ -66,3 +86,4 @@ Hey there! 👋 I'm Ayoub Tadlaoui aka "Atlas kaisar", a relentless problem-solv
 ### Favorite Quote
 
 "High performance knows no part-time commitment."
+```

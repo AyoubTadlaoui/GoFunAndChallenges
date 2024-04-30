@@ -53,9 +53,24 @@ func (p *Person) gender(g string) {
 
 }
 func Structures() {
+	var name, email, gender string
+	fmt.Println("Enter your name")
+	fmt.Scan(&name)
+	fmt.Println("Enter Your Email")
+	fmt.Scan(&email)
 	actualYear := time.Now().Year()
-	birthYear := 1995
-	sex := "Male"
+	var birthYear int
+	fmt.Println("Enter Year you were Born")
+	fmt.Scan(&birthYear)
+	fmt.Println("Are you Male or Female?\nPress m for male.\nPress f for female.")
+	fmt.Scan(&gender)
+	if gender == "m" {
+		gender = "Male"
+	} else if gender == "f" {
+		gender = "Female"
+	} else {
+		gender = "Undefined"
+	}
 	//Languages:
 	nattylangs := [...]string{"English", "French", "Arabic"}
 	proglangs := []string{"Go", "Dart"}
@@ -69,15 +84,15 @@ func Structures() {
 	adress.adressMethod(city, region, country, zip)
 	//- Create instances of the person struct and print their details.✅
 	person := Person{
-		name:    "Atlas Kaisar",
-		company: "KaisarInov8ors",
-		email:   "atlas.kaisar@icloud.com",
+		name:    name,
+		company: "Zone01",
+		email:   email,
 		age:     actualYear - birthYear,
 		adress:  adress,
 		langs:   mainLangs,
 	}
 
-	person.gender(sex)
+	person.gender(gender)
 	fmt.Printf("______Boss Data______\nName:%s\nCompany:%s\nEmail:%s\nAge:%d\nSex:%s\n%+v\n%+v\n", person.name, person.company, person.email, person.age, person.sex, person.adress, person.langs)
 
 	fmt.Println("===Adress===")

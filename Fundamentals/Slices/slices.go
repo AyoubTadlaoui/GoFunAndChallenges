@@ -20,14 +20,14 @@ func Slices() {
 	// - Create a slice of strings and append new elements to it
 	fmt.Println("- Create a slice of strings and append new elements to it")
 	stringSlice := make([]string, 4)
-	stringSlice[0] = "BOLO"
-	stringSlice[1] = "Pinkoko"
-	stringSlice[2] = "BOSS"
-	stringSlice[3] = "MrStrikeforce"
+	stringSlice[0] = "User"
+	stringSlice[1] = "Client"
+	stringSlice[2] = "DEV"
+	stringSlice[3] = "Manager"
 	// Create a slice of strings and append new elements to it
 	fmt.Println(stringSlice[0], stringSlice[1], stringSlice[2], stringSlice[3])
 
-	stringSlice2 := []string{"Friends", "Rich", "Wealthy", "Happy", "Sweet revange"}
+	stringSlice2 := []string{"Friends", "Family", "Country", "Travel", "Work"}
 	stringSliceAppend := append(stringSlice2, "2024")
 	fmt.Println(stringSlice2)
 	fmt.Println(stringSliceAppend)
@@ -37,7 +37,7 @@ func Slices() {
 	fmt.Println(subSliceValues)
 
 	// Printing the elements dynamically using loops
-	stringSlices3 := []string{"Money", "Power", "Wealth", "Iron Will", "Discipline"}
+	stringSlices3 := []string{"Gross-Revenue", "Profit", "Investement", "Contribution", "Total"}
 	indxSlice3 := []int{0, 2}
 	var subSlice3 []string
 	for _, indx := range indxSlice3 {
