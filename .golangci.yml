@@ -34,6 +34,9 @@ linters-settings:
       - style
     disabled-checks:
       - ifElseChain
+      # Lesson 09 deliberately uses value receivers on Person to teach
+      # value/copy semantics (see WithEmail). Don't penalize the teaching choice.
+      - hugeParam
 
 issues:
   exclude-rules:

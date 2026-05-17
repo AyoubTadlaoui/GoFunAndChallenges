@@ -24,12 +24,12 @@ import (
 // ErrUsage signals the args couldn't be parsed.
 var ErrUsage = errors.New("usage: ztail -c N file [file ...]")
 
-// parseArgs validates argv and returns (n, files).
-func parseArgs(argv []string) (int, []string, error) {
+// parseArgs validates argv and returns the byte count and remaining file paths.
+func parseArgs(argv []string) (n int, files []string, err error) {
 	if len(argv) < 3 || argv[0] != "-c" {
 		return 0, nil, ErrUsage
 	}
-	n, err := strconv.Atoi(argv[1])
+	n, err = strconv.Atoi(argv[1])
 	if err != nil || n < 0 {
 		return 0, nil, fmt.Errorf("-c expects a non-negative integer, got %q", argv[1])
 	}
