@@ -1,89 +1,130 @@
-# LearningGo
+# GoFunAndChallenges
 
-## Overview
+> A hands-on Go course. **14 runnable lessons**, **4 multi-concept challenges**, and **1 project** — each with code, README, and tests you can run today.
 
-# LearningGo is a project aimed at helping individuals learn the Go programming language through practical examples, challenges, and tutorials. This project covers various aspects of Go programming, from fundamentals to advanced topics, and provides hands-on exercises to reinforce learning.
+[![CI](https://github.com/AyoubTadlaoui/GoFunAndChallenges/actions/workflows/ci.yml/badge.svg)](https://github.com/AyoubTadlaoui/GoFunAndChallenges/actions/workflows/ci.yml)
+[![Go Reference](https://pkg.go.dev/badge/github.com/AyoubTadlaoui/GoFunAndChallenges.svg)](https://pkg.go.dev/github.com/AyoubTadlaoui/GoFunAndChallenges)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-## Table of Contents
+---
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Installation
-
-To use the LearningGo project, you'll need to have Go installed on your system. You can download and install Go from the official [Go website](https://golang.org/).
-
-Once you have Go installed, you can clone this repository to your local machine using the following command:
+## Quickstart (under 60 seconds)
 
 ```bash
-git clone https://github.com/AyoubTadlaoui/LearningGo.git
+# 1. Install Go ≥ 1.22 — https://go.dev/dl/
+go version
+
+# 2. Clone
+git clone https://github.com/AyoubTadlaoui/GoFunAndChallenges.git
+cd GoFunAndChallenges
+
+# 3. Run lesson 01
+go run ./lessons/01-hello
+
+# 4. Run every test in the course
+go test ./...
 ```
 
-## Usage
+That's it. Every lesson is a runnable package — no commented-out imports, no "uncomment this to enable that". Pick a lesson, run it, test it, edit it.
 
-The LearningGo project contains various directories and files, each focusing on a specific aspect of Go programming. Here's a brief overview of what you'll find in each directory:
+---
 
-- **Fundamentals**: Contains examples and tutorials covering the basic concepts of Go programming, including variables, functions, control flow, data structures, and more.
-- **Challenges**: Offers a collection of coding challenges designed to test your understanding of Go fundamentals and improve your problem-solving skills.
-- **Advanced**: Explores advanced topics in Go programming, such as concurrency, error handling, packages, and more.
-
-Feel free to explore the directories and files in this repository to learn more about Go programming.
-
-## Project Structure
+## What's inside
 
 ```
-LearningGo/
-├── Fundamentals/
-│   ├── README.md
-│   └── .main.go
-├── Challenges/
-│   ├── README.md
-│   └── ...
-├── Advanced/
-│   ├── README.md
-│   └── ...
-├── LICENSE
-└── README.md
-└── main.go
+GoFunAndChallenges/
+├── lessons/        14 progressive lessons (hello → testing)
+├── challenges/      4 multi-concept exercises
+├── projects/        Larger programs (currently: pinball)
+├── docs/            CURRICULUM.md — the learning path
+├── .github/         CI workflow
+├── Makefile         make help for the full list of tasks
+├── .golangci.yml    Lint config
+└── go.mod
+```
 
-## How To lunch your Programs:
-Go to Fundamentals Directory into main.go
-Uncomment the Imported directory and its function for exemple, you want to work with Arrays uncomment Path that ends with Arrays
-then in the Function uncomment its package module. as you can see below.
-import (
+### Lessons
 
-arrayconst "LearningGO/Fundamentals/Arrays"
-	"fmt"
-)
+A guided tour of the language. Each one has `main.go`, `*_test.go`, and a per-lesson `README.md`.
 
-func Fundamentals() {
+| # | Topic | Run |
+|---|---|---|
+| [01](lessons/01-hello)            | Hello, Go                    | `go run ./lessons/01-hello` |
+| [02](lessons/02-variables)        | Variables & constants        | `go run ./lessons/02-variables` |
+| [03](lessons/03-control-flow)     | `if` / `for` / `switch`      | `go run ./lessons/03-control-flow` |
+| [04](lessons/04-arrays)           | Fixed-size arrays            | `go run ./lessons/04-arrays` |
+| [05](lessons/05-slices)           | Slices (with generics)       | `go run ./lessons/05-slices` |
+| [06](lessons/06-maps)             | Maps                         | `go run ./lessons/06-maps` |
+| [07](lessons/07-functions)        | Functions, variadic, closures| `go run ./lessons/07-functions` |
+| [08](lessons/08-methods)          | Methods & interfaces         | `go run ./lessons/08-methods` |
+| [09](lessons/09-structs)          | Structs & `fmt.Stringer`     | `go run ./lessons/09-structs` |
+| [10](lessons/10-pointers)         | Pointers & a linked list     | `go run ./lessons/10-pointers` |
+| [11](lessons/11-errors)           | Errors, `%w`, `errors.Is`    | `go run ./lessons/11-errors` |
+| [12](lessons/12-packages)         | Packages & modules           | `go run ./lessons/12-packages` |
+| [13](lessons/13-concurrency)      | Goroutines, channels, mutex  | `go run ./lessons/13-concurrency` |
+| [14](lessons/14-testing)          | Tests, benchmarks, fuzzing   | `go run ./lessons/14-testing` |
 
-	fmt.Println("================== Fundamentals ===================")
+### Challenges
 
- arrayconst.Arrays()
+Bigger problems that combine multiple concepts.
 
-}
+| # | Challenge | Highlights |
+|---|---|---|
+| [01](challenges/01-fizzbuzz)     | FizzBuzz with `io.Writer`        | Dependency injection for testability |
+| [02](challenges/02-linked-list)  | Generic doubly linked list       | `List[T]`, O(1) remove, in-place reverse |
+| [03](challenges/03-tail)         | `ztail` — simplified `tail -c N` | `Seek`, multi-file, exit codes |
+| [04](challenges/04-library)      | Concurrent library catalog       | Sentinel errors, `sync.RWMutex`, `-race` test |
 
-When you finish with your section make sure you Comment-out the path first then the function before you save the file
+### Projects
+
+| Project | What it is |
+|---|---|
+| [pinball](projects/pinball) | Terminal ball-and-paddle. State and I/O are split, so the game logic is unit-tested. |
+
+See [`docs/CURRICULUM.md`](docs/CURRICULUM.md) for the suggested study order and time budget.
+
+---
+
+## Common tasks
+
+```bash
+make help        # list everything
+make check       # fmt + vet + test  (the default sanity check)
+make test        # go test ./...
+make test-race   # go test -race ./...    (always use this on concurrent code)
+make cover       # coverage profile + HTML report
+make bench       # run all benchmarks
+make lint        # golangci-lint run
+```
+
+---
+
+## Why this layout
+
+The earlier version of the repo asked learners to uncomment imports in a central `main.go` to switch between exercises. That was a friction trap: imports broke, package names drifted, and tests didn't exist.
+
+This rewrite trades that workflow for the standard Go convention:
+
+- **One directory = one runnable / testable package.** `go run ./lessons/05-slices` just works.
+- **Every lesson has tests.** That's what `go test ./...` is for — and CI proves it on every push.
+- **Pure logic is testable, I/O lives at the edges.** See `challenges/01-fizzbuzz` and `projects/pinball` for the pattern in miniature.
+- **Bugs from the original have been fixed.** `math.Phi` → `math.Pi`, broken error wrapping, "surface" misnamed as circumference, etc.
+
+---
 
 ## Contributing
 
-Contributions to the LearningGo project are welcome! If you have any suggestions, improvements, or bug fixes, please feel free to submit a pull request. Make sure to follow the [contribution guidelines](CONTRIBUTING.md) before contributing.
+PRs welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT — see [LICENSE](LICENSE).
 
-=======
+---
 
-### About Me
+### About the author
 
-Hey there! 👋 I'm Ayoub Tadlaoui aka "Atlas kaisar", a relentless problem-solver from Morocco with a passion for coding and a knack for turning complex mathematical concepts into elegant software solutions. My journey into the world of programming began with my fascination with modulo topics and abelian groups in mathematics, where I discovered the power of computational thinking. Since 2016, I've been leveraging my coding skills to deliver top-notch software solutions for clients and assisting university students in conquering their academic modules. With a relentless pursuit of excellence and a strong foundation in both mathematics and programming, I'm dedicated to pushing the boundaries of what's possible in the world of technology.
+I'm **Ayoub Tadlaoui** — *Atlas Kaisar* — a problem-solver from Morocco, building software since 2016.
+My journey into programming started with **modulo topics and abelian groups in mathematics**, where I discovered the power of computational thinking.
 
-### Favorite Quote
-
-"High performance knows no part-time commitment."
-```
+> "High performance knows no part-time commitment."

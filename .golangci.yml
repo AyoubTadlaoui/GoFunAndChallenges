@@ -1,0 +1,49 @@
+# golangci-lint config. Run with `make lint` or `golangci-lint run`.
+# Reference: https://golangci-lint.run/usage/configuration/
+
+run:
+  timeout: 3m
+  tests: true
+
+linters:
+  disable-all: true
+  enable:
+    - errcheck
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+    - misspell
+    - gofmt
+    - goimports
+    - revive
+    - unconvert
+    - gocritic
+
+linters-settings:
+  revive:
+    rules:
+      - name: var-naming
+      - name: package-comments
+      - name: exported
+      - name: unused-parameter
+        disabled: true
+  gocritic:
+    enabled-tags:
+      - performance
+      - style
+    disabled-checks:
+      - ifElseChain
+
+issues:
+  exclude-rules:
+    # main.go in each lesson is a tiny demo — don't insist on package comments there.
+    - path: main\.go
+      linters:
+        - revive
+      text: package-comments
+    # Tests don't need exported-symbol docs.
+    - path: _test\.go
+      linters:
+        - revive
+      text: exported
