@@ -6,6 +6,20 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/AyoubTadlaoui/GoFunAndChallenges.svg)](https://pkg.go.dev/github.com/AyoubTadlaoui/GoFunAndChallenges)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
+![GoFunAndChallenges — atlas-ragnarok theme](docs/hero.png)
+
+`go run ./lessons/13-concurrency` followed by `go test` across three real packages — every one passes:
+
+<!--
+  Animated WebP renders as an <img> tag, which GitHub's README sanitizer
+  passes through cleanly (it strips <video>). WebP plays in every modern
+  browser including Safari. The MP4 and GIF copies are kept alongside
+  for downloads (links below the image).
+-->
+![Lessons running and tests passing — atlas-ragnarok theme](docs/demo.webp)
+
+<sub>Also available as [GIF](docs/demo.gif) or [MP4](docs/demo.mp4). Every lesson is a runnable package and every package has tests — `go test ./...` proves it. Theme: [atlas-ragnarok](https://github.com/AyoubTadlaoui/atlas-ragnarok). Regenerate with `sh docs/_theme/gen.sh` (needs `vhs`, `ffmpeg`, `webp`, `pillow`, `numpy`).</sub>
+
 ---
 
 ## Quickstart (under 60 seconds)
